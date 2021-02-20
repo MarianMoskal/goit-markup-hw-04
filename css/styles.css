@@ -12,7 +12,7 @@
 }
 
 :focus {
-  outline-color: var(--blue-color);
+  outline: none;
 }
 
 body {
@@ -120,8 +120,6 @@ li.active > a {
 
 .header-contact:hover,
 .header-contact:focus,
-.footer-contacts:hover,
-.footer-contacts:focus,
 .nav-item:hover,
 .nav-item:focus {
   color: var(--blue-color);
@@ -438,6 +436,9 @@ li.active > a {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  outline-style: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-buttons {
@@ -458,6 +459,21 @@ li.active > a {
 
 /* Item-cards */
 
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-link-wrapper {
+  box-shadow: inherit;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+
 .item-cards {
   display: flex;
   flex-wrap: wrap;
@@ -472,10 +488,6 @@ li.active > a {
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
   background-color: var(--white-text-color-1);
-}
-
-.item-box {
-  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .item-cards li img {
@@ -534,6 +546,11 @@ li.active > a {
 
 a.footer-contacts[href='mailto:info@example.com'] {
   margin: 9px 0;
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--white-text-color-1);
 }
 
 .foot-div {
