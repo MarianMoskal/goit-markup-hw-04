@@ -103,7 +103,6 @@ header {
 }
 
 .svg-contact {
-  content: '';
   margin-right: 10px;
   fill: currentColor;
 }
@@ -349,7 +348,6 @@ li.active > a {
 }
 
 .social-link-svg {
-  content: '';
   fill: currentColor;
   padding: 0 12px;
 }
@@ -393,7 +391,6 @@ li.active > a {
 }
 
 .regulars-svg {
-  content: '';
   fill: currentColor;
 }
 
